@@ -28,6 +28,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  */
 #include <stdio.h>
 
 int main(int argc, char** argv) {
+   /* returns -1 if the number of arguments is not sufficient */
+   if (argc < 2) {
+       return -1;
+   }
+   
    /* make a pointer for the file in the argument */
    FILE *fptr;
    fptr = fopen(argv[1], "r");

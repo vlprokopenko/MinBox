@@ -1,7 +1,7 @@
 all:
-	gcc -o cat src/cat.c
-	gcc -o ls src/ls.c
-	gcc -o pwd src/pwd.c
+	gcc --static -o cat src/cat.c
+	gcc --static -o ls src/ls.c
+	gcc --static -o pwd src/pwd.c
 clean:
 	rm cat
 	rm ls

@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
    fptr = fopen(argv[1], "r");
    
    /* create a buffer with the file's contents, read it and output with printf */
-   char buffer[5];
+   char buffer[BUFSIZ];
    while (fgets(buffer, sizeof(buffer), fptr) != NULL) {
        printf("%s", buffer);
       }

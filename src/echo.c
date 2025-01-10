@@ -26,12 +26,20 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 	       
 #include <stdio.h>
-#include <unistd.h>
 
 int main(int argc, char** argv) {
-   char* username;
-   /* get the username using unistd */
-   username = getlogin();
-   printf("%s\n", username);
+   /* return 1 if the number of arguments is not sufficient */
+   if (argc < 2) {
+      printf("USAGE: echo ...\n");
+      return 1;
+   }
+   /* assign a pointer to the argv */
+   char **arg = argv + 1;
+   /* go through the argv, printing all the arguments except the program name */
+   while (*arg) {
+       printf("%s ", *arg);
+       arg++;
+   }
+   printf("\n");
    return 0;
 }

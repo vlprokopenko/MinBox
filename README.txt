@@ -8,6 +8,7 @@ List of things currently implemented:
 	CAT - missing all flags
 	PWD - missing all flags
 	TTY - missing all flags
+	WHOAMI - missing all flags
 
 BUILDING:
 	to build, just run make and it will build all of the executables in the Makefile's directory. To run all of the tests just run make test. To remove all the executables instantly, run make clean.

@@ -10,6 +10,8 @@ all:
 	gcc --static -o mkdir src/mkdir.c
 	gcc --static -o touch src/touch.c
 	gcc --static -o rmdir src/rmdir.c
+	gcc --static -o rm src/rm.c
+	gcc --static -o clear src/clear.c
 clean:
 	rm cat
 	rm ls
@@ -22,3 +24,5 @@ clean:
 	rm mkdir
 	rm touch
 	rm rmdir
+	rm rm
+	rm clear

@@ -1,0 +1,32 @@
+.TH MinBox 1 "11 January 2024"
+.SH NAME
+MinBox - tiny coreutils implementation
+.SH SYNOPSIS
+.B MinBox
+.SH DESCRIPTION             
+.PP            
+.I MinBox
+is an extremely tiny coreutils implementation in under 1000 lines of code.
+
+.SH Commands
+See the src/ directory for a list.
+
+.SH Building on Linux
+To build on Linux, install the dependencies listed below (if you just cloned the repo, you might already have them), and run make. It will build all of the statically linked
+binaries in the main directory. You can install them manually using your current coreutils, or just play with them around a bit.
+
+.SH Windows
+MinBox cannot work on Windows, since it uses a lot of linux-specific headers and functions. There are no plans currently on porting it to Windows.
+
+.SH Building on Windows
+Like it was said, it can't just work on Windows. If you really want to build and use it, install the dependencies for building it, and just run make. There are no dependencies
+other than those needed to build the software.
+
+.SH Building dependencies
+GCC - any version, MAKE - any version, and any libc (musl, glibc, dietlibc), if you're on a VM or WSL something out of these should be available instantly.
+
+.SH POSIX compliance
+MinBox is not very POSIX compliant, though POSIX compliance patches will be introduced onto the main repo in the future.
+
+.SH *BSD
+I have never built it on the BSDs, though you certainly can try. It might just work! I don't know.

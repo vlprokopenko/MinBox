@@ -26,3 +26,6 @@ clean:
 	rm rmdir
 	rm rm
 	rm clear
+man:
+	cp doc/man/* /usr/share/man/man1/
+	mandb

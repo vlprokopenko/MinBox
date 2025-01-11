@@ -32,12 +32,11 @@ int main(int argc, char** argv) {
    /* assign a variable for the name of the tty */
    char* t = ttyname(STDIN_FILENO);
    
-   /* if not a tty, return 0, if a tty, return 1 */
    if (t == NULL) {
        printf("Not a tty\n");
-       return 0;
+       return 1;
    } else {
        printf("%s\n", t);
-       return 1;
+       return 0;
    }
 }

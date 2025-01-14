@@ -31,12 +31,14 @@ int main(int argc, char** argv) {
    /* returns 1 if the number of arguments is not sufficient */
    if (argc < 2) {
        printf("USAGE: cat ...\n");
+       printf("(error), no argument provided\n");
        return 1;
    }
 
    /* return 1 if the number of arguments is too big */
    if (argc > 2) {
       printf("USAGE: cat ...\n");
+      printf("(error), amount of arguments is too big\n");
       return 1;
    }
    

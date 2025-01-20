@@ -29,6 +29,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 #include <dirent.h>
 
 int main(int argc, char** argv) {
+   if (argc < 2) {
+       printf("USAGE: rm ...\n");
+       return 1;
+   }
    /* make a pointer for the file with the argv as the name */
    const char *f;
    f = argv[1];

@@ -9,7 +9,6 @@ all:
 	gcc --static -o build/echo src/echo.c
 	gcc --static -o build/mkdir src/mkdir.c
 	gcc --static -o build/touch src/touch.c
-	gcc --static -o build/rmdir src/rmdir.c
 	gcc --static -o build/rm src/rm.c
 	gcc --static -o build/clear src/clear.c
 clean:
